@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- replace following with loader code once themes are implemented  -->
+<link rel="stylesheet" type="text/css" href="./lib/css/default.css"/>
+<link rel="stylesheet" type="text/css" href="./lib/ext/jquery-ui/css/ui-lightness/jquery-ui-1.8.21.custom.css"/>
+<script	src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script src="./lib/ext/jquery-ui/js/jquery-ui-1.8.21.custom.min.js"></script>
+<script src="./lib/ext/underscore/underscore.js"></script>
+<script src="./lib/ext/backbone/backbone.js"></script>
+<script src="./lib/js/mq.js"></script>
+<!-- insert RDFa Rich Web snippet here -->
+</head>
+<body>
+	<div id="mq_dock_extender1"></div>
+	<div class="ui-widget-header ui-corner-all" id="mq_dock">
+		<button id="mq_next">Next</button>
+		<button id="mq_delete_current">Delete</button>
+		<div id="mq_dock_extender2">click here to open playlist manager</div>
+		<div id="mq_pl_pane" style="display:none;">
+			<div id="mq_pl_manager">
+				<h3>Default</h3>
+				<div>testing</div>
+				<h3>My Playlist 2</h3>
+				<div>testing 2</div>
+			</div>
+		</div>
+	</div>
+	
+	<div>
+		<div id="mq_droptarget_previous" class="mq_hidden">Drop items here to insert before current item in the current playlist</div>
+		<div id="mq_main_column">
+			<div id="mq_placeholder" class="mq_hidden">
+				<div id="mq_placeholder_text">
+					This is a place holder. drop link here or add a site via the dialog below.
+				</div>
+				<form><input id="mq_placeholder_url"></input><button id="mq_placeholder_add_url">Add URL</button></form>
+			</div>
+		
+			<iframe id="mq_content" frameborder></iframe>
+		</div>
+		<div id="mq_droptarget_next" class="mq_hidden">Drop items here to append after current item in the current playlist</div>
+	</div>
+</body>
+</html>

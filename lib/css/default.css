@@ -1,0 +1,74 @@
+body {
+	height : 100%;
+	overflow : hidden;
+}
+/*todo: convert all absolute px values to scalable relative ones -> mobile
+/* use namespaced selectors to allow mashups without potential hassle*/
+
+#mq_droptarget_previous {
+	float:left;
+	width:20%;
+}
+
+#mq_main_column {
+	float: left;
+	width : 100%;
+}
+
+#mq_droptarget_next {
+	float:left;
+	width:20%;
+}
+
+.mq_hidden {
+	display:none;
+}
+
+#mq_dock_extender1 {
+	height : 0.3em;
+	z-index: -1;
+}
+
+#mq_dock_extender2 {
+	cursor: pointer;
+	font-size: 0.5em;
+	height : 0.5em;
+	bottom : 0.5em;
+	text-align: center;
+	color : black;
+	background-color: yellow;
+}
+
+#mq_dock {}
+
+.mq_dock_minimized {height: 0em;}
+
+.mq_dock_normal {height: 0.5em;}
+
+.mq_dock_extended {height: 40em;}
+
+.mq_button {
+	/*width: 3em;*/
+	border-radius: 5px;
+	border : 1px solid black;
+	cursor: pointer;
+}
+#mq_content {
+	height: 100%;
+	border: none;
+}
+.mq_droptarget {
+	display: block;
+	border: 2px dotted green;
+}
+.mq_help {
+	position: absolute;
+	border: 1px solid grey;
+	border-radius: 5px;
+	background-color : white;
+	opacity: 100%;
+}
+.mq_help0 {
+	top: 3em;
+	left:4em;
+}
