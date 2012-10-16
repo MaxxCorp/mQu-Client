@@ -7,7 +7,8 @@ body {
 
 #mq_droptarget_previous {
 	float:left;
-	width:20%;
+	height:100%;
+	width:15%;
 }
 
 #mq_main_column {
@@ -17,7 +18,8 @@ body {
 
 #mq_droptarget_next {
 	float:left;
-	width:20%;
+	height: 100;
+	width:15%;
 }
 
 .mq_hidden {
@@ -39,7 +41,10 @@ body {
 	background-color: yellow;
 }
 
-#mq_dock {}
+#mq_dock {
+	height: 5%;
+	display: inline;
+}
 
 .mq_dock_minimized {height: 0em;}
 
@@ -55,11 +60,17 @@ body {
 }
 #mq_content {
 	height: 100%;
+	width: 100%;
 	border: none;
 }
+#mq_placeholder {
+	height: 100%;
+	width: 100%;
+}
 .mq_droptarget {
-	display: block;
+	/*
 	border: 2px dotted green;
+	*/
 }
 .mq_help {
 	position: absolute;

@@ -1,0 +1,117 @@
+<html>
+	<head>
+		<style type="text/css">
+		/*
+			body {
+				width:100%;
+				height:100%;
+			}
+		*/
+			#mq_dock {
+				height: 10%;
+				background-color: yellow;
+			}
+			#mq_main {
+				height: 90%;
+			}
+			#mq_droptarget_previous {
+				float:left;
+				height: 100%;
+				width: 15%;
+				background-color: red;
+			}
+			#mq_main_center {
+				float:left;
+				width: 100%;
+				background-color: green;
+			}
+			#mq_droptarget_next {
+				float:left;
+				height: 100%;
+				width: 15%;
+				background-color: blue;
+			}
+			#mq_content {
+				border: none;
+				width: 100%;
+				height: 100%;
+			}
+			
+			#mq_placeholder {
+				width: 100%;
+				height: 100%;
+			}
+			
+			.mq_hidden {
+				display: none;
+			}
+		</style>
+		<script	type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script type="text/javascript">
+			function ignoreEvent(e) {
+				e.originalEvent.stopPropagation();
+				e.originalEvent.preventDefault();
+			}
+			
+			var appState = 0;
+			
+			$(document)
+				.bind("dragenter", function (e) {
+					ignoreEvent(e);
+					
+					//2 = item dragged into screen
+					//todo: factor out into view layer
+					if(appState != "dragging") {
+						$("#mq_main_center").css({"width": "70%"});
+					
+						$("#mq_droptarget_previous").css({"display": "block"});
+							
+						$("#mq_droptarget_next").css({"display": "block"});
+							
+						appState = "dragging";
+					}
+				})
+				.bind("dragover", function(e) {
+					ignoreEvent(e);
+				})
+				.bind("dragleave", function(e) {
+					if(appState != "normal") {	
+						$("#mq_main_center").css({"width": "100%"});
+					
+						$("#mq_droptarget_previous").css({"display": "none"});
+							
+						$("#mq_droptarget_next").css({"display": "none"});
+							
+						appState = "normal";
+					}
+				})
+				.bind("drop", function (e) {
+					ignoreEvent(e);
+					
+					if(appState != "normal") {	
+						$("#mq_main_center").css({"width": "100%"});
+					
+						$("#mq_droptarget_previous").css({"display": "none"});
+							
+						$("#mq_droptarget_next").css({"display": "none"});
+							
+						appState = "normal";
+					}
+					
+				});
+		</script>
+	</head>
+	<body>
+	<div id="mq_dock">
+	</div>
+	<div id="mq_main">
+		<div id="mq_droptarget_previous" class="mq_hidden">Drop items here to insert before current item in the current playlist</div>
+		<div id="mq_main_center">
+			<div id="placeholder" class="mq_hidden"></div>
+			<iframe id="mq_content" src="http://urlybits.com"></iframe>
+		</div>
+		<div id="mq_droptarget_next" class="mq_hidden">Drop items here to append after current item in the current playlist</div>
+	</div>
+
+	</body>
+</html>

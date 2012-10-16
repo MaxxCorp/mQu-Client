@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<svg version="1.2" baseProfile="tiny" viewBox="0 0 21000 29700" preserveAspectRatio="xMidYMid" fill-rule="evenodd" clip-path="url(#presentation_clip_path)" stroke-width="28.222" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" xmlns:presentation="urn:oasis:names:tc:opendocument:xmlns:presentation:1.0" xmlns:smil="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0" xmlns:anim="urn:oasis:names:tc:opendocument:xmlns:animation:1.0" xml:space="preserve">
+ <defs>
+  <clipPath id="presentation_clip_path" clipPathUnits="userSpaceOnUse">
+   <rect x="0" y="0" width="21000" height="29700"/>
+  </clipPath>
+ </defs>
+ <g id="id2" class="Master_Slide" clip-path="url(#presentation_clip_path)">
+  <g id="bg-id2" visibility="visible" class="Background">
+   <rect fill="none" stroke="none" x="0" y="0" width="21000" height="29700"/>
+  </g>
+  <g id="bo-id2" visibility="visible" class="BackgroundObjects"/>
+ </g>
+ <g id="id1" class="Slide" visibility="visible" clip-path="url(#presentation_clip_path)">
+  <g class="com.sun.star.drawing.CustomShape">
+   <g>
+    <path fill="rgb(220,35,0)" stroke="none" d="M 6348,10456 L 7956,8848 10900,11792 13844,8848 15452,10456 12508,13400 15452,16344 13844,17952 10900,15008 7956,17952 6348,16344 9292,13400 6348,10456 6348,10456 Z M 3405,13400 L 3405,13400 Z M 18397,13400 L 18397,13400 Z"/>
+    <path fill="none" stroke="rgb(255,0,0)" d="M 6348,10456 L 7956,8848 10900,11792 13844,8848 15452,10456 12508,13400 15452,16344 13844,17952 10900,15008 7956,17952 6348,16344 9292,13400 6348,10456 6348,10456"/>
+    <path fill="none" stroke="rgb(255,0,0)" d="M 3405,13400 L 3405,13400"/>
+    <path fill="none" stroke="rgb(255,0,0)" d="M 18397,13400 L 18397,13400"/>
+    <rect fill="none" stroke="none" x="3405" y="13400" width="10601" height="10601"/>
+   </g>
+  </g>
+ </g>
+</svg>
